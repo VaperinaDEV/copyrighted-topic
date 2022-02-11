@@ -1,7 +1,7 @@
 copyright_tag:
-  default: "tagname"
+  default: "copyright"
   description:
-    en: "Add the copy protected tag"
+    en: "Add the name of the tag used for copyrighted topics."
 copyright_title: This content has been copyright-protected by the author!
 disable_contextmenu:
   type: bool
