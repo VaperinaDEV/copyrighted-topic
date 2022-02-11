@@ -12,11 +12,15 @@ export default {
         const disableCopy = settings.disable_copy;
 
         if (disableContextmenu && copyrightBody && topicCheck) {
-          copyrightBody.on('contextmenu', '#post_1 .cooked', function(e){ return false; });
+          copyrightBody.on('contextmenu', '#post_1 .cooked', function(e) {
+            return false;
+          });
         }
         
         if (disableCopy && copyrightBody && topicCheck) {
-          copyrightBody.bind('copy', '#post_1 .cooked', function(e){ return false; });
+          copyrightBody.bind('copy', '#post_1 .cooked', function(e) {
+            return false;
+          });
         }
       });
     });
