@@ -1,0 +1,21 @@
+copyright_tag:
+  default: "tagname"
+  description:
+    en: "Add the copy protected tag"
+copyright_title: This content has been copyright-protected by the author!
+disable_contextmenu:
+  type: bool
+  default: false
+  description:
+    en: "Disable right click on OP"
+disable_copy:
+  type: bool
+  default: false
+  description:
+    en: "Disable copy on OP"
+disable_anon_selection:
+  type: bool
+  default: false
+  description:
+    en: "Disable selection for anons on OP"
+

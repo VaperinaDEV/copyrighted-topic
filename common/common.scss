@@ -1,0 +1,18 @@
+body.tag-#{$copyright_tag} {
+  #topic-title .title-wrapper {
+    &:before {
+      content: "#{$copyright_title}";
+      color: #e40202;
+    }
+  }
+  @if $disable-anon-selection == "true" {
+   .anon & #post_1 .cooked {
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      -o-user-select: none;
+      user-select: none;
+    }
+  }
+}
