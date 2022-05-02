@@ -10,7 +10,7 @@ export default {
         
       if (hasPrefix) {
         const copyrightTag = settings.copyright_tag;
-        const copyrightBody = $("body.tag-" + copyrightTag);   
+        const copyrightBody = $("body.tag-" + copyrightTag + " .container.posts");
         const disableContextmenu = settings.disable_contextmenu;
         const disableCopy = settings.disable_copy;
         
