@@ -31,7 +31,7 @@ export default {
         
         // Disable lightboxed images contextmenu
         if (disableImgContextmenu) {
-          $('body').on('contextmenu', '.mfp-img', function(e) {
+          $('body').on('contextmenu', '.cooked img, .mfp-img', function(e) {
             return false;
           });
         }   
