@@ -18,4 +18,9 @@ disable_anon_selection:
   default: false
   description:
     en: "Disable selection for anons on OP"
+disable_img_contextmenu:
+  type: bool
+  default: false
+  description:
+    en: "Disable right click on lightboxed images" 
 
