@@ -13,6 +13,7 @@ export default {
         const copyrightBody = $("body.tag-" + copyrightTag + " .container.posts");
         const disableContextmenu = settings.disable_contextmenu;
         const disableCopy = settings.disable_copy;
+        const disableImgContextmenu = settings.disable_img_contextmenu;
         
         // Disable right click, context menu
         if (disableContextmenu && copyrightBody) {
@@ -27,6 +28,13 @@ export default {
             return false;
           });
         }
+        
+        // Disable lightboxed images contextmenu
+        if (disableImgContextmenu) {
+          $('body').on('contextmenu', '.mfp-img', function(e) {
+            return false;
+          });
+        }   
       }
     });
   },
